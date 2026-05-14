@@ -1,0 +1,23 @@
+Hey Vijay,
+
+Got the GPG signing set up — all the PRs should be good to go now. Here's the full list:
+
+Security fixes:
+  #38 - Use .text() for CVE ID in modal title (defense-in-depth)
+  #39 - Harden API key storage and encryption key management
+  #40 - Update SweetAlert2 from 11.4.9 to 11.26.24 (CVE-2023-40042)
+  #41 - Add prototype pollution protection and remove sensitive logging
+
+Feature improvements:
+  #42 - Make schema references version-agnostic and add version detection
+  #43 - Add ADP read and delete support
+  #44 - Add test infrastructure with Vitest and GitHub Actions CI
+
+I think that covers all the security findings from my original report plus some groundwork for schema 5.1 and fuller ADP support. I also added a basic test suite (51 tests) and a GitHub Actions workflow so PRs get checked automatically going forward.
+
+I'm happy to keep maintaining and updating this if CERT/CC is open to it. I 
+
+Let me know if you have any questions on any of the PRs.
+
+Best,
+Jerry
